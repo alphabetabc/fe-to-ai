@@ -1,0 +1,11 @@
+*.frag
+*.vert
+*.glsl
+try-3d/try-WebGL/examples
+try-2d/try-g/static/map
+try-gis/try-openlayers/demo/geoJson/base-data.json
+pnpm-lock.yaml
+*.geoJson
+*.geojson
+*.geoJSON
+*.dataJson
