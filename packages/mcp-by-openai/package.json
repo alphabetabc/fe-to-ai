@@ -1,0 +1,22 @@
+{
+    "name": "mcp-by-openai",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start-simple:main": "tsx --env-file=.env --max-old-space-size=4096 ./src/simple-mcp/index.ts",
+        "start-simple:server": "tsx ./src/simple-mcp/server/weather-server.ts",
+        "start-simple-full": "tsx --env-file=.env --max-old-space-size=4096 ./src/simple-full/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.7.0",
+    "dependencies": {
+        "@hono/node-server": "^1.14.0",
+        "axios": "^1.8.4",
+        "hono": "^4.7.5",
+        "openai": "^4.90.0",
+        "tsx": "^4.19.3"
+    }
+}
