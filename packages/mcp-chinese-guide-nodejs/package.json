@@ -1,0 +1,25 @@
+{
+    "name": "mcp-chinese-guide-nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start-simple-client": "tsx --env-file=.env --max-old-space-size=4096 ./src/mcp-simple-client.ts",
+        "start-client": "tsx --env-file=.env --max-old-space-size=4096 ./src/mcp-cllient.ts",
+        "start-mcp-server": "tsx --env-file=.env --max-old-space-size=4096 ./src/mcp-server-web-search.ts",
+        "mcp-inspector-mcp-server": "mcp-inspector pnpm start:mcp-server",
+        "start-mcp-server-sampling-del-file": "tsx --env-file=.env --max-old-space-size=4096 ./src/sampling/mcp-server-sampling-del-file.ts",
+        "start-mcp-client-sampling-del-file": "tsx --env-file=.env --max-old-space-size=4096 ./src/sampling/mcp-client-sampling-del-file.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.8.0",
+        "axios": "^1.8.4",
+        "@modelcontextprotocol/inspector": "^0.8.0",
+        "zod": "^3.24.2",
+        "openai": "^4.91.1"
+    }
+}
